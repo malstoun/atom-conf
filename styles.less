@@ -1,0 +1,57 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+code{
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.tree-view {
+  .list-item{
+    color: #484f5a;
+  }
+  .selected{
+    &>span{
+      color: fade(#fff, 100%);
+    }
+    &:before{
+      background-color: fade(#8c919c, 100%);
+    }
+  }
+
+  .list-item.status-ignored{
+    color: #8c919c;
+  }
+}
+
+.editor {
+
+}
+
+.editor .cursor {
+
+}
+
+.settings-view {
+  .config-menu {
+    .nav > li{
+      &:hover {
+        background-color: fade(#c0c5ce,63);
+      }
+
+      &.active{
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
